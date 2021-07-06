@@ -28,7 +28,7 @@ namespace planning.wandsworth.gov.ukBot.Models
         {
             var html = await GetHtml(url, maxAttempts);
             HtmlDocument doc = new HtmlDocument();
-            doc.LoadHtml(html);
+            doc.LoadHtml(WebUtility.HtmlDecode(html));
             return doc;
         }
         public async Task<string> GetHtml(string url, int maxAttempts = 1)

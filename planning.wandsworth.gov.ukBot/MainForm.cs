@@ -69,9 +69,12 @@ namespace planning.wandsworth.gov.ukBot
             foreach (var node in nodes)
             {
                 var name = _regex.Replace(_textInfo.ToTitleCase(node.InnerText), string.Empty);
+                if (name.Equals("Url")) continue;
                 var value = node.NextSibling.InnerText.Replace("\r\t", "").Trim();
                 propertyInfo[name].SetValue(item, value);
             }
+
+            item.Url = url;
 
             return item;
         }

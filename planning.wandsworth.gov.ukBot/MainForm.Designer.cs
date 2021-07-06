@@ -36,6 +36,10 @@ namespace planning.wandsworth.gov.ukBot
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.toDateI = new MetroFramework.Controls.MetroDateTime();
+            this.fromDateI = new MetroFramework.Controls.MetroDateTime();
             this.logToFileI = new MetroFramework.Controls.MetroCheckBox();
             this.logToUII = new MetroFramework.Controls.MetroCheckBox();
             this.openOutputB = new MetroFramework.Controls.MetroButton();
@@ -49,10 +53,6 @@ namespace planning.wandsworth.gov.ukBot
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.DebugT = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.fromDateI = new MetroFramework.Controls.MetroDateTime();
-            this.toDateI = new MetroFramework.Controls.MetroDateTime();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -152,6 +152,48 @@ namespace planning.wandsworth.gov.ukBot
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1019, 566);
             this.panel2.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(357, 207);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 20);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "To";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(39, 207);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "From";
+            // 
+            // toDateI
+            // 
+            this.toDateI.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.toDateI.Location = new System.Drawing.Point(413, 200);
+            this.toDateI.MinimumSize = new System.Drawing.Size(0, 30);
+            this.toDateI.Name = "toDateI";
+            this.toDateI.Size = new System.Drawing.Size(200, 30);
+            this.toDateI.TabIndex = 29;
+            // 
+            // fromDateI
+            // 
+            this.fromDateI.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fromDateI.Location = new System.Drawing.Point(121, 200);
+            this.fromDateI.MinimumSize = new System.Drawing.Size(0, 30);
+            this.fromDateI.Name = "fromDateI";
+            this.fromDateI.Size = new System.Drawing.Size(200, 30);
+            this.fromDateI.TabIndex = 28;
             // 
             // logToFileI
             // 
@@ -358,48 +400,6 @@ namespace planning.wandsworth.gov.ukBot
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // fromDateI
-            // 
-            this.fromDateI.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fromDateI.Location = new System.Drawing.Point(121, 200);
-            this.fromDateI.MinimumSize = new System.Drawing.Size(0, 30);
-            this.fromDateI.Name = "fromDateI";
-            this.fromDateI.Size = new System.Drawing.Size(200, 30);
-            this.fromDateI.TabIndex = 28;
-            // 
-            // toDateI
-            // 
-            this.toDateI.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.toDateI.Location = new System.Drawing.Point(413, 200);
-            this.toDateI.MinimumSize = new System.Drawing.Size(0, 30);
-            this.toDateI.Name = "toDateI";
-            this.toDateI.Size = new System.Drawing.Size(200, 30);
-            this.toDateI.TabIndex = 29;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(39, 207);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "From";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(357, 207);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 20);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "To";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -413,7 +413,7 @@ namespace planning.wandsworth.gov.ukBot
             this.Name = "MainForm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Orange;
-            this.Text = "         planning.wandsworth.gov.ukBot 1.00";
+            this.Text = "         planning.wandsworth.gov.ukBot 1.01";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
